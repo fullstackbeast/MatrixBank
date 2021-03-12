@@ -1,0 +1,40 @@
+﻿@model MyBMS.Models.Entities.Manager
+
+@{ ViewData["Title"] = "Delete"; }
+
+<h1>Details</h1>
+
+<h3>Manager Details</h3>
+<div>
+    <h4>Managers</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            First Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            Middle Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+      
+     
+    </dl>
+    <a asp-action="Index" asp-controller="Manager">Back to List</a>
+</div>
